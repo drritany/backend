@@ -1,0 +1,8 @@
+.env
+./node_modules
+node_modules
+debug.ts
+./contracts_
+./test
+credentials.json
+drritanyCredentials.json

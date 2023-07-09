@@ -1,0 +1,44 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc -p .",
+    "debug": "tsc debug.ts && node debug.js"
+  },
+  "keywords": [],
+  "author": "Dr Lindsey",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "geoip-lite": "^1.4.7",
+    "googleapis": "^118.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.10.5",
+    "node-fetch": "^3.3.1",
+    "nodemailer": "^6.9.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/geoip-lite": "^1.4.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.15.11",
+    "@types/nodemailer": "^6.4.7",
+    "@types/validator": "^13.7.15",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
