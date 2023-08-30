@@ -57,10 +57,11 @@ export const createTestimonyPage = async (req: Request, res: Response): Promise<
  * @param req The params that were passed in during the client request
  * @param res The response of the query by client request
  */
-export const cartPage = (req: Request, res: Response) => {
+export const getOrderPage = async (req: Request, res: Response) => {
     try {
-        const view: IView = { msg: "Cartpage" };
-        res.status(200).json(view);
+      const { id } = req.params
+      const cart = await Order.getOrderById(id)
+        res.status(200).json(cart);
       } catch (error) {
         const error_: IView = {msg: `${error}`}
         res.status(400).json(error_);

@@ -117,8 +117,8 @@ export interface IAdminModel extends Model<IAdmin> {
  */
  export interface IOrderModel extends Model<IOrder> {
     processOrder(customerSpec: ICustomerSpec, productSpec: ICart): IOrder,
-    getOrders(): Object,
-    getOrderById(id: string): Object
+    getOrders(): Array<IOrder>,
+    getOrderById(id: string): IOrder
   }  
 
 /**

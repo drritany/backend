@@ -293,6 +293,7 @@ export const createNewsSubscriberPage = async (req: Request, res: Response): Pro
     //const { subscriber } = req.body
     //Add the subscriber to the database
     const sub = await News.createSubscriber(req.body)
+    console.log("sub: ", req.body)
 
     ///Send email to subscriber
     const status = await sendSubnewsletterEmail(sub.subscriber)

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon -L src/server.ts",
     "build": "tsc -p .",
     "debug": "tsc debug.ts && node debug.js"
   },
@@ -29,6 +29,7 @@
     "mongoose": "^6.10.5",
     "node-fetch": "^3.3.1",
     "nodemailer": "^6.9.1",
+    "nodemailer-express-handlebars": "^6.1.0",
     "validator": "^13.9.0"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "@types/jsonwebtoken": "^9.0.1",
     "@types/node": "^18.15.11",
     "@types/nodemailer": "^6.4.7",
+    "@types/nodemailer-express-handlebars": "^4.0.2",
     "@types/validator": "^13.7.15",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",

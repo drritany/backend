@@ -5,7 +5,7 @@ import { IRouter, Router } from "express";
 import {
     createTestimonyPage,
     updateTestimonyPage,
-    cartPage,
+    getOrderPage,
     createOrderPage
 } from "../controllers/userController";
 
@@ -22,7 +22,7 @@ router.post("/user/dashboard/testimonial/add/", createTestimonyPage)
 router.patch("/user/dashboard/testimonial/:id", updateTestimonyPage)
 
 //Cart route
-router.get("/user/dashboard/cart", cartPage);
+router.get("/user/dashboard/order/:id", getOrderPage);
 
 //Order route
 router.post("/user/dashboard/order", createOrderPage);
