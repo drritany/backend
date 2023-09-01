@@ -6,7 +6,7 @@
 3. [Technologies](#technologies)
 
 ## Overview
-This is the backend of Dr Ritany website. Note: Application is not yet ready
+This is the backend of Dr Ritany website.
 
 ## Languages
 * Handlebars

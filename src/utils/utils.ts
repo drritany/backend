@@ -51,10 +51,13 @@ export const sendEmail = (
     context: Object | undefined
     ): string | void => {
         let transporter = nodemailer.createTransport({
-          host: 'smtp.privateemail.com', // Replace with your SMTP host
-          port: 465, // Replace with your SMTP port
-          secure: true, // Set to true if using a secure connection (e.g., port 465)
-            ///service: 'gmail',
+          // host: 'smtp.privateemail.com', // Replace with your SMTP host
+          // port: 465, // Replace with your SMTP port
+          // secure: true, // Set to true if using a secure connection (e.g., port 465)
+          host: "smtp.gmail.com",
+          port: 587,
+          secure: false,
+            service: 'gmail',
             auth: {
               user: senderEmail,
               pass: senderPassword
