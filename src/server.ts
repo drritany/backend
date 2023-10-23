@@ -46,3 +46,5 @@ mongoose
   .catch((error: string) => {
     console.log("DB Error: ", error);
   });
+
+export default app
